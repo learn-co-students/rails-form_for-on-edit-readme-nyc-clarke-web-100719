@@ -761,3 +761,481 @@ Processing by PostsController#edit as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
   Rendered posts/edit.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 347ms (Views: 318.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2019-11-06 11:18:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 27ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2019-11-06 11:18:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.6ms)
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.3ms)
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.8ms)
+Started GET "/posts" for 127.0.0.1 at 2019-11-06 11:18:44 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 350ms (Views: 342.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2019-11-06 11:24:31 -0500
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2019-11-06 11:24:35 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for #<Class:0x00007f99f94a3ec8>
+Did you mean?  ids):
+  
+app/controllers/posts_controller.rb:41:in `set_post'
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.2ms)
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.4ms)
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-06 16:26:06.660910"], ["updated_at", "2019-11-06 16:26:06.660910"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Arkham Asylum: A Serious House On Serious Earth"], ["description", "Teen Titans: The Judas Contract"], ["created_at", "2019-11-06 16:28:50.575230"], ["updated_at", "2019-11-06 16:28:50.575230"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Batman: Year One"], ["description", "JLA: Earth 2"], ["created_at", "2019-11-06 16:28:50.580527"], ["updated_at", "2019-11-06 16:28:50.580527"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Killing Joke"], ["description", "Batman: Year One"], ["created_at", "2019-11-06 16:28:50.585428"], ["updated_at", "2019-11-06 16:28:50.585428"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Action Comics"], ["description", "The Sinestro Corps War"], ["created_at", "2019-11-06 16:28:50.591789"], ["updated_at", "2019-11-06 16:28:50.591789"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Identity Crisis"], ["description", "Batman: The Long Halloween"], ["created_at", "2019-11-06 16:28:50.596648"], ["updated_at", "2019-11-06 16:28:50.596648"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Sinestro Corps War"], ["description", "Whatever Happened To The Man Of Tomorrow?"], ["created_at", "2019-11-06 16:28:50.601596"], ["updated_at", "2019-11-06 16:28:50.601596"]]
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Action Comics"], ["description", "Whatever Happened To The Man Of Tomorrow?"], ["created_at", "2019-11-06 16:28:50.609652"], ["updated_at", "2019-11-06 16:28:50.609652"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Dark Knight Returns"], ["description", "Superman For All Seasons"], ["created_at", "2019-11-06 16:28:50.616755"], ["updated_at", "2019-11-06 16:28:50.616755"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JLA: Tower Of Babel"], ["description", "Action Comics"], ["created_at", "2019-11-06 16:28:50.621826"], ["updated_at", "2019-11-06 16:28:50.621826"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Teen Titans: The Judas Contract"], ["description", "All Star Superman"], ["created_at", "2019-11-06 16:28:50.626727"], ["updated_at", "2019-11-06 16:28:50.626727"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JLA: Tower Of Babel"], ["description", "Superman For All Seasons"], ["created_at", "2019-11-06 16:28:50.631681"], ["updated_at", "2019-11-06 16:28:50.631681"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JLA: Earth 2"], ["description", "Snowbirds Don't Fly"], ["created_at", "2019-11-06 16:28:50.636588"], ["updated_at", "2019-11-06 16:28:50.636588"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Multiversity"], ["description", "Snowbirds Don't Fly"], ["created_at", "2019-11-06 16:28:50.641631"], ["updated_at", "2019-11-06 16:28:50.641631"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Superman For All Seasons"], ["description", "Whatever Happened To The Man Of Tomorrow?"], ["created_at", "2019-11-06 16:28:50.646455"], ["updated_at", "2019-11-06 16:28:50.646455"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Jack Kirby's New Gods"], ["description", "Grant Morrison's Animal Man"], ["created_at", "2019-11-06 16:28:50.651259"], ["updated_at", "2019-11-06 16:28:50.651259"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Sinestro Corps War"], ["description", "Multiversity"], ["created_at", "2019-11-06 16:28:50.656367"], ["updated_at", "2019-11-06 16:28:50.656367"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Jack Kirby's New Gods"], ["description", "Jack Kirby's New Gods"], ["created_at", "2019-11-06 16:28:50.661572"], ["updated_at", "2019-11-06 16:28:50.661572"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Arkham Asylum: A Serious House On Serious Earth"], ["description", "Whatever Happened To The Man Of Tomorrow?"], ["created_at", "2019-11-06 16:28:50.666356"], ["updated_at", "2019-11-06 16:28:50.666356"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Swamp Thing: The Anatomy Lesson"], ["description", "The Coyote Gospel"], ["created_at", "2019-11-06 16:28:50.671000"], ["updated_at", "2019-11-06 16:28:50.671000"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Multiversity"], ["description", "Teen Titans: The Judas Contract"], ["created_at", "2019-11-06 16:28:50.677311"], ["updated_at", "2019-11-06 16:28:50.677311"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Action Comics"], ["description", "Batman: The Long Halloween"], ["created_at", "2019-11-06 16:28:50.682421"], ["updated_at", "2019-11-06 16:28:50.682421"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Kingdom Come"], ["description", "Superman For All Seasons"], ["created_at", "2019-11-06 16:28:50.687106"], ["updated_at", "2019-11-06 16:28:50.687106"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Coyote Gospel"], ["description", "The Dark Knight Returns"], ["created_at", "2019-11-06 16:28:50.692047"], ["updated_at", "2019-11-06 16:28:50.692047"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Coyote Gospel"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:28:50.697006"], ["updated_at", "2019-11-06 16:28:50.697006"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Superman For All Seasons"], ["description", "The Sinestro Corps War"], ["created_at", "2019-11-06 16:28:50.703574"], ["updated_at", "2019-11-06 16:28:50.703574"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "For The Man Who Has Everything"], ["description", "The Sinestro Corps War"], ["created_at", "2019-11-06 16:28:50.710020"], ["updated_at", "2019-11-06 16:28:50.710020"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Green Arrow: The Longbow Hunters"], ["description", "Batman: The Long Halloween"], ["created_at", "2019-11-06 16:28:50.715086"], ["updated_at", "2019-11-06 16:28:50.715086"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Snowbirds Don't Fly"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:28:50.719809"], ["updated_at", "2019-11-06 16:28:50.719809"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Dark Knight Returns"], ["description", "Grant Morrison's Animal Man"], ["created_at", "2019-11-06 16:28:50.724577"], ["updated_at", "2019-11-06 16:28:50.724577"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Doom Patrol"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:28:50.729365"], ["updated_at", "2019-11-06 16:28:50.729365"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Dark Knight Returns"], ["description", "Teen Titans: The Judas Contract"], ["created_at", "2019-11-06 16:28:50.734007"], ["updated_at", "2019-11-06 16:28:50.734007"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Snowbirds Don't Fly"], ["description", "The Coyote Gospel"], ["created_at", "2019-11-06 16:28:50.738506"], ["updated_at", "2019-11-06 16:28:50.738506"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "All Star Superman"], ["description", "For The Man Who Has Everything"], ["created_at", "2019-11-06 16:28:50.743080"], ["updated_at", "2019-11-06 16:28:50.743080"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Jack Kirby's New Gods"], ["description", "Identity Crisis"], ["created_at", "2019-11-06 16:28:50.750975"], ["updated_at", "2019-11-06 16:28:50.750975"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Killing Joke"], ["description", "Identity Crisis"], ["created_at", "2019-11-06 16:28:50.755566"], ["updated_at", "2019-11-06 16:28:50.755566"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Crisis On Infinite Earths"], ["description", "Arkham Asylum: A Serious House On Serious Earth"], ["created_at", "2019-11-06 16:28:50.760534"], ["updated_at", "2019-11-06 16:28:50.760534"]]
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Jack Kirby's New Gods"], ["description", "Arkham Asylum: A Serious House On Serious Earth"], ["created_at", "2019-11-06 16:28:50.767995"], ["updated_at", "2019-11-06 16:28:50.767995"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Batman: The Long Halloween"], ["description", "Action Comics"], ["created_at", "2019-11-06 16:28:50.772822"], ["updated_at", "2019-11-06 16:28:50.772822"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Batman: Year One"], ["description", "Crisis On Infinite Earths"], ["created_at", "2019-11-06 16:28:50.777683"], ["updated_at", "2019-11-06 16:28:50.777683"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Batman: Year One"], ["description", "Crisis On Infinite Earths"], ["created_at", "2019-11-06 16:28:50.782742"], ["updated_at", "2019-11-06 16:28:50.782742"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Grant Morrison's Animal Man"], ["description", "The Killing Joke"], ["created_at", "2019-11-06 16:28:50.789329"], ["updated_at", "2019-11-06 16:28:50.789329"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Batman: The Long Halloween"], ["description", "Teen Titans: The Judas Contract"], ["created_at", "2019-11-06 16:28:50.794044"], ["updated_at", "2019-11-06 16:28:50.794044"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Arkham Asylum: A Serious House On Serious Earth"], ["description", "Gotham Central"], ["created_at", "2019-11-06 16:28:50.798839"], ["updated_at", "2019-11-06 16:28:50.798839"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Kingdom Come"], ["description", "Whatever Happened To The Man Of Tomorrow?"], ["created_at", "2019-11-06 16:28:50.803952"], ["updated_at", "2019-11-06 16:28:50.803952"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Detective Comics"], ["description", "Doom Patrol"], ["created_at", "2019-11-06 16:28:50.808924"], ["updated_at", "2019-11-06 16:28:50.808924"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Doom Patrol"], ["description", "Batman: The Long Halloween"], ["created_at", "2019-11-06 16:28:50.813766"], ["updated_at", "2019-11-06 16:28:50.813766"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Arkham Asylum: A Serious House On Serious Earth"], ["description", "For The Man Who Has Everything"], ["created_at", "2019-11-06 16:28:50.818736"], ["updated_at", "2019-11-06 16:28:50.818736"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Multiversity"], ["description", "Superman For All Seasons"], ["created_at", "2019-11-06 16:28:50.825376"], ["updated_at", "2019-11-06 16:28:50.825376"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Killing Joke"], ["description", "The New Frontier"], ["created_at", "2019-11-06 16:28:50.830619"], ["updated_at", "2019-11-06 16:28:50.830619"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Superman: Red Son"], ["description", "Swamp Thing: The Anatomy Lesson"], ["created_at", "2019-11-06 16:28:50.835814"], ["updated_at", "2019-11-06 16:28:50.835814"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts/1" for 127.0.0.1 at 2019-11-06 11:28:57 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for #<Class:0x00007f99f94a3ec8>
+Did you mean?  ids):
+  
+app/controllers/posts_controller.rb:41:in `set_post'
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20151230232412)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreatePosts < ActiveRecord::Migration[4.2] (called from require at bin/rails:4)
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151230232412"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-06 16:30:08.738622"], ["updated_at", "2019-11-06 16:30:08.738622"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Snowbirds Don't Fly"], ["description", "Green Arrow: The Longbow Hunters"], ["created_at", "2019-11-06 16:30:16.553615"], ["updated_at", "2019-11-06 16:30:16.553615"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Sinestro Corps War"], ["description", "For The Man Who Has Everything"], ["created_at", "2019-11-06 16:30:16.559566"], ["updated_at", "2019-11-06 16:30:16.559566"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "For The Man Who Has Everything"], ["description", "Batman: The Long Halloween"], ["created_at", "2019-11-06 16:30:16.566406"], ["updated_at", "2019-11-06 16:30:16.566406"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Arkham Asylum: A Serious House On Serious Earth"], ["description", "Green Arrow: The Longbow Hunters"], ["created_at", "2019-11-06 16:30:16.573231"], ["updated_at", "2019-11-06 16:30:16.573231"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Green Arrow: The Longbow Hunters"], ["description", "Doom Patrol"], ["created_at", "2019-11-06 16:30:16.578183"], ["updated_at", "2019-11-06 16:30:16.578183"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JLA: Earth 2"], ["description", "All Star Superman"], ["created_at", "2019-11-06 16:30:16.582876"], ["updated_at", "2019-11-06 16:30:16.582876"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Sinestro Corps War"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:30:16.587514"], ["updated_at", "2019-11-06 16:30:16.587514"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Superman For All Seasons"], ["description", "Doom Patrol"], ["created_at", "2019-11-06 16:30:16.592339"], ["updated_at", "2019-11-06 16:30:16.592339"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Superman: Red Son"], ["description", "JLA: Earth 2"], ["created_at", "2019-11-06 16:30:16.599105"], ["updated_at", "2019-11-06 16:30:16.599105"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Killing Joke"], ["description", "Action Comics"], ["created_at", "2019-11-06 16:30:16.606026"], ["updated_at", "2019-11-06 16:30:16.606026"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Multiversity"], ["description", "Green Arrow: The Longbow Hunters"], ["created_at", "2019-11-06 16:30:16.612341"], ["updated_at", "2019-11-06 16:30:16.612341"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Whatever Happened To The Man Of Tomorrow?"], ["description", "Batman: The Long Halloween"], ["created_at", "2019-11-06 16:30:16.617665"], ["updated_at", "2019-11-06 16:30:16.617665"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Detective Comics"], ["description", "Gotham Central"], ["created_at", "2019-11-06 16:30:16.624131"], ["updated_at", "2019-11-06 16:30:16.624131"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Superman: Red Son"], ["description", "The Coyote Gospel"], ["created_at", "2019-11-06 16:30:16.629390"], ["updated_at", "2019-11-06 16:30:16.629390"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JLA: Tower Of Babel"], ["description", "Detective Comics"], ["created_at", "2019-11-06 16:30:16.634376"], ["updated_at", "2019-11-06 16:30:16.634376"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "For The Man Who Has Everything"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:30:16.640670"], ["updated_at", "2019-11-06 16:30:16.640670"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Killing Joke"], ["description", "Kingdom Come"], ["created_at", "2019-11-06 16:30:16.645572"], ["updated_at", "2019-11-06 16:30:16.645572"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Gotham Central"], ["description", "The Dark Knight Returns"], ["created_at", "2019-11-06 16:30:16.652330"], ["updated_at", "2019-11-06 16:30:16.652330"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Coyote Gospel"], ["description", "Batman: Year One"], ["created_at", "2019-11-06 16:30:16.657381"], ["updated_at", "2019-11-06 16:30:16.657381"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Whatever Happened To The Man Of Tomorrow?"], ["description", "For The Man Who Has Everything"], ["created_at", "2019-11-06 16:30:16.664230"], ["updated_at", "2019-11-06 16:30:16.664230"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Gotham Central"], ["description", "Crisis On Infinite Earths"], ["created_at", "2019-11-06 16:30:16.670236"], ["updated_at", "2019-11-06 16:30:16.670236"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Crisis On Infinite Earths"], ["description", "The Sinestro Corps War"], ["created_at", "2019-11-06 16:30:16.674900"], ["updated_at", "2019-11-06 16:30:16.674900"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Doom Patrol"], ["description", "Teen Titans: The Judas Contract"], ["created_at", "2019-11-06 16:30:16.679582"], ["updated_at", "2019-11-06 16:30:16.679582"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JLA: Tower Of Babel"], ["description", "Action Comics"], ["created_at", "2019-11-06 16:30:16.686135"], ["updated_at", "2019-11-06 16:30:16.686135"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Grant Morrison's Animal Man"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:30:16.691219"], ["updated_at", "2019-11-06 16:30:16.691219"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Gotham Central"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:30:16.695950"], ["updated_at", "2019-11-06 16:30:16.695950"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Detective Comics"], ["description", "Batman: Year One"], ["created_at", "2019-11-06 16:30:16.700522"], ["updated_at", "2019-11-06 16:30:16.700522"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Arkham Asylum: A Serious House On Serious Earth"], ["description", "Teen Titans: The Judas Contract"], ["created_at", "2019-11-06 16:30:16.705373"], ["updated_at", "2019-11-06 16:30:16.705373"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Action Comics"], ["description", "Gotham Central"], ["created_at", "2019-11-06 16:30:16.711650"], ["updated_at", "2019-11-06 16:30:16.711650"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Snowbirds Don't Fly"], ["description", "The Dark Knight Returns"], ["created_at", "2019-11-06 16:30:16.717474"], ["updated_at", "2019-11-06 16:30:16.717474"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Swamp Thing: The Anatomy Lesson"], ["description", "JLA: Earth 2"], ["created_at", "2019-11-06 16:30:16.722416"], ["updated_at", "2019-11-06 16:30:16.722416"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "JLA: Earth 2"], ["description", "Batman: Year One"], ["created_at", "2019-11-06 16:30:16.727344"], ["updated_at", "2019-11-06 16:30:16.727344"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Doom Patrol"], ["description", "Jack Kirby's New Gods"], ["created_at", "2019-11-06 16:30:16.732067"], ["updated_at", "2019-11-06 16:30:16.732067"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Kingdom Come"], ["description", "For The Man Who Has Everything"], ["created_at", "2019-11-06 16:30:16.736686"], ["updated_at", "2019-11-06 16:30:16.736686"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Grant Morrison's Animal Man"], ["description", "Gotham Central"], ["created_at", "2019-11-06 16:30:16.741511"], ["updated_at", "2019-11-06 16:30:16.741511"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "All Star Superman"], ["description", "The Sinestro Corps War"], ["created_at", "2019-11-06 16:30:16.746506"], ["updated_at", "2019-11-06 16:30:16.746506"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Snowbirds Don't Fly"], ["description", "The New Frontier"], ["created_at", "2019-11-06 16:30:16.751067"], ["updated_at", "2019-11-06 16:30:16.751067"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Multiversity"], ["description", "Batman: The Long Halloween"], ["created_at", "2019-11-06 16:30:16.755905"], ["updated_at", "2019-11-06 16:30:16.755905"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Sinestro Corps War"], ["description", "Arkham Asylum: A Serious House On Serious Earth"], ["created_at", "2019-11-06 16:30:16.763711"], ["updated_at", "2019-11-06 16:30:16.763711"]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Killing Joke"], ["description", "For The Man Who Has Everything"], ["created_at", "2019-11-06 16:30:16.771824"], ["updated_at", "2019-11-06 16:30:16.771824"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Dark Knight Returns"], ["description", "Action Comics"], ["created_at", "2019-11-06 16:30:16.777255"], ["updated_at", "2019-11-06 16:30:16.777255"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Detective Comics"], ["description", "JLA: Tower Of Babel"], ["created_at", "2019-11-06 16:30:16.782470"], ["updated_at", "2019-11-06 16:30:16.782470"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Detective Comics"], ["description", "Superman: Red Son"], ["created_at", "2019-11-06 16:30:16.788016"], ["updated_at", "2019-11-06 16:30:16.788016"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Swamp Thing: The Anatomy Lesson"], ["description", "Multiversity"], ["created_at", "2019-11-06 16:30:16.794970"], ["updated_at", "2019-11-06 16:30:16.794970"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "The Dark Knight Returns"], ["description", "Batman: Year One"], ["created_at", "2019-11-06 16:30:16.800061"], ["updated_at", "2019-11-06 16:30:16.800061"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Jack Kirby's New Gods"], ["description", "Teen Titans: The Judas Contract"], ["created_at", "2019-11-06 16:30:16.804611"], ["updated_at", "2019-11-06 16:30:16.804611"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Identity Crisis"], ["description", "The Killing Joke"], ["created_at", "2019-11-06 16:30:16.809400"], ["updated_at", "2019-11-06 16:30:16.809400"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Grant Morrison's Animal Man"], ["description", "Batman: Year One"], ["created_at", "2019-11-06 16:30:16.814196"], ["updated_at", "2019-11-06 16:30:16.814196"]]
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Identity Crisis"], ["description", "Kingdom Come"], ["created_at", "2019-11-06 16:30:16.820173"], ["updated_at", "2019-11-06 16:30:16.820173"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Crisis On Infinite Earths"], ["description", "Arkham Asylum: A Serious House On Serious Earth"], ["created_at", "2019-11-06 16:30:16.825521"], ["updated_at", "2019-11-06 16:30:16.825521"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts" for 127.0.0.1 at 2019-11-06 11:30:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 215ms (Views: 200.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2019-11-06 11:30:49 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for #<Class:0x00007ff2b8a358d8>
+Did you mean?  ids):
+  
+app/controllers/posts_controller.rb:41:in `set_post'
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/as15-ubun16-ltp/.rbenv/versions/2.6.2/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.5ms)
+Started GET "/posts/1" for 127.0.0.1 at 2019-11-06 11:33:34 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 28.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2019-11-06 11:34:21 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 43.1ms | ActiveRecord: 2.0ms)
+
+
