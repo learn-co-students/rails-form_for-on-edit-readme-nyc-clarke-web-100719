@@ -38,7 +38,7 @@ A good rule of thumb for when to use one approach over the other is below:
 * Use `form_tag` when you simply need an HTML form generated. Examples of this would be: a search form field or a contact form
 
 
-## Implementation of `form_for`
+##g Implementation of `form_for`
 
 Let's take the `edit` form that utilized the `form_tag` that we built before for `posts` and refactor it to use `form_for`. As a refresher, here is the `form_tag` version:
 
